@@ -1,0 +1,52 @@
+.terminal {
+  display: flex;
+
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.terminal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0px,
+    rgba(0, 0, 0, 0.3) 0.6px,
+    transparent 2px,
+    transparent 2px
+  );
+}
+
+.titleText {
+  width: 30%;
+}
+
+.terminalButton {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.terminalButton:hover {
+  transform: translateY(-2px);
+}
+
+.terminalButton input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+
+  cursor: pointer;
+}
+
+.previewImage {
+  width: 70%;
+}

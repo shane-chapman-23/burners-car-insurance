@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+
+  font-family: "Press Start 2P", system-ui;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(96, 255, 22);
+  text-shadow: 0 0 2px rgb(96, 255, 22);
+}
+
+body {
+  background-color: black;
+}
